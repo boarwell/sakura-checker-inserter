@@ -1,0 +1,25 @@
+{
+  "name": "sakura-checker-inserter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild --bundle --minify --outdir=build ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boarwell/sakura-checker-inserter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boarwell/sakura-checker-inserter/issues"
+  },
+  "homepage": "https://github.com/boarwell/sakura-checker-inserter#readme",
+  "devDependencies": {
+    "esbuild": "^0.12.25",
+    "typescript": "^4.4.2"
+  }
+}
