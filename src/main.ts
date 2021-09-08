@@ -14,8 +14,9 @@ import { extractID, getTarget, createIframe } from "./utils";
     return;
   }
 
-  const target = resultTarget.value;
-
-  const iframe = createIframe(resultID.value);
-  target.parentNode?.insertBefore(iframe, target);
+  window.requestIdleCallback(() => {
+    const iframe = createIframe(resultID.value);
+    const target = resultTarget.value;
+    target.parentNode?.insertBefore(iframe, target);
+  });
 })();

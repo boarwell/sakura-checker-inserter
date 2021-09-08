@@ -48,6 +48,7 @@ export function createIframe(id: string): HTMLIFrameElement {
   i.style.border = "0";
   i.style.width = "100%";
   i.style.height = "600px";
+  i.setAttribute("sandobx", "");
 
   return i;
 }
