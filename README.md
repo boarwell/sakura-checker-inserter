@@ -4,6 +4,8 @@ Insert a [サクラチェッカー](https://sakura-checker.jp/) page of an amazo
 
 Inspired by [amazon にサクラチェッカーを iframe で表示する](https://gist.github.com/ahy4/a64a8e31f754640d84839f0f6d9bf2d9)
 
+![image](./assets/image.jpg)
+
 ## Usage
 
 1. Build
