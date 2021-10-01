@@ -1,7 +1,11 @@
-import { extractID, getTarget, createIframe } from "./utils";
+import { extractID, getTarget, createIframe, isAmazonJP } from "./utils";
 
 (function main() {
   const url = location.href;
+  if (!isAmazonJP(url)) {
+    return;
+  }
+
   const resultID = extractID(url);
   if (!resultID.ok) {
     console.log(resultID.message);

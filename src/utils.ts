@@ -52,3 +52,10 @@ export function createIframe(id: string): HTMLIFrameElement {
 
   return i;
 }
+
+export function isAmazonJP(href: string): boolean {
+  const AMAZON_JP_HOSTNAME_PATTERN = /www\.amazon\.co\.jp/;
+  const { hostname } = new URL(href);
+
+  return AMAZON_JP_HOSTNAME_PATTERN.test(hostname);
+}
